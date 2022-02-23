@@ -28,7 +28,16 @@ selectora {
      grid-area: eslogan;
      color:white;
      background-color: black;
-     }
+     -webkit-animation: cssAnimation 5s 20 ease-in;
+-moz-animation: cssAnimation 5s 20 ease-in;
+-o-animation: cssAnimation 5s 20 ease-in;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(1deg) scale(0.354) skew(0deg) translate(0px); }
+to { -webkit-transform: rotate(1deg) scale(1.12) skew(0deg) translate(0px); }
+}
+
+
 .nav{ 
     grid-area: nav; 
     justify-self: stretch;    
@@ -75,6 +84,7 @@ ul li a{
     background-color: burlywood;
     width: 20;
     height: 20;
+    background-image: linear-gradient(grey, white);
   }
   .descripcion {
     justify-self: center; 
@@ -85,7 +95,7 @@ ul li a{
     margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform:unset;
-    text-shadow: 1px 0.5px;
+    text-shadow:-3px 17px 21px #000000;
   }
   .bienvenida {
     justify-self: center; 
@@ -95,6 +105,7 @@ ul li a{
     background-color: burlywood;
     width: 20;
     height: 20;
+    background-image: linear-gradient(grey, white);
   }
   .foto { grid-area: foto; }
   .nombre { grid-area: nombre; }
@@ -127,6 +138,7 @@ footer {
   width: auto;
   padding: 20;
   margin: auto;
+  background-image: linear-gradient(grey, white);
 }
 
 /* tienda css */
