@@ -66,6 +66,7 @@ ul li a{
     grid-area: foto; 
     padding: 5px;
     width: 500px;
+    border-radius: 20px;
   }
   .nombre {
     justify-self: center; 
