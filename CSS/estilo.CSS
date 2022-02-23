@@ -1,0 +1,166 @@
+ /* 
+selectora {
+    propiedad : valor;
+}
+*/
+.header {
+ display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1.9fr 0.5fr 0.6fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "redes"
+    "logo"
+    "eslogan"
+    "nav"; 
+  justify-content: space-around; 
+  align-content: stretch; 
+  justify-items: center; 
+  align-items: center;
+  background-color: black;
+  }
+ .redes {
+      grid-area: redes;
+      justify-self: start;
+      align-self: start;
+     }
+.eslogan {
+     grid-area: eslogan;
+     color:white;
+     background-color: black;
+     }
+.nav{ 
+    grid-area: nav; 
+    justify-self: stretch;    
+}
+.menu {
+  display: grid; 
+  grid-template-columns: max-content max-content max-content max-content; 
+  grid-template-rows: 1fr; 
+  gap: 0px 15px; 
+  grid-template-areas: 
+    ". . . ."; 
+  grid-area: menu; 
+  justify-content: space-evenly;
+  justify-items: stretch;
+  align-items: stretch; 
+}
+ul li a{
+  outline: none;
+  text-decoration: none;
+}
+.logo { grid-area: logo; }
+  main {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "foto foto nombre nombre"
+      "foto foto descripcion descripcion"
+      "bienvenida bienvenida bienvenida bienvenida"; 
+  }
+  .foto {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: foto; 
+    padding: 5px;
+    width: 500px;
+  }
+  .nombre {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: nombre; 
+    color: black;
+    background-color: burlywood;
+    width: 20;
+    height: 20;
+  }
+  .descripcion {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: descripcion; 
+    width: 300px;
+    padding: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:unset;
+    text-shadow: 1px 0.5px;
+  }
+  .bienvenida {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: bienvenida; 
+    color: black;
+    background-color: burlywood;
+    width: 20;
+    height: 20;
+  }
+  .foto { grid-area: foto; }
+  .nombre { grid-area: nombre; }
+  .descripcion { grid-area: descripcion; }
+  .bienvenida { grid-area: bienvenida; }
+  body{
+    background-color: grey;
+}
+footer {
+  display: grid; 
+  grid-template-columns:1fr 1fr; 
+  grid-template-rows: auto; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "maps horarios"; 
+}
+.maps {
+  justify-self: start; 
+  align-self: end; 
+  grid-area: maps;
+  width: auto;
+  padding: 20;
+  margin: auto;
+}
+.horarios {
+  justify-self: end; 
+  align-self: end; 
+  grid-area: horarios; 
+  background-color:dimgrey;
+  width: auto;
+  padding: 20;
+  margin: auto;
+}
+
+/* tienda css */
+
+
+.nombrefoto {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "verano primavera"
+    "otoño invierno"; 
+    justify-self: center;
+    align-self: center;
+}
+.imgfoto {
+  justify-self: center; 
+  align-self: center; 
+  grid-area: verano; 
+}
+.imgfoto2 {
+  justify-self: center; 
+  align-self: center; 
+  grid-area: primavera; 
+}
+.imgfoto4 {
+  justify-self: center; 
+  align-self: center; 
+  grid-area: otoño; 
+}
+.imgfoto3 {
+  justify-self: center; 
+  align-self: center; 
+  grid-area: invierno; 
+}
+
