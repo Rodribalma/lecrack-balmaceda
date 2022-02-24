@@ -68,13 +68,14 @@ ul li a{
       "foto foto nombre nombre"
       "foto foto descripcion descripcion"
       "bienvenida bienvenida bienvenida bienvenida"; 
-  }
+  } 
   .foto {
     justify-self: center; 
     align-self: center; 
     grid-area: foto; 
     padding: 5px;
     width: 500px;
+    border-radius: 20px;
   }
   .nombre {
     justify-self: center; 
